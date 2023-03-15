@@ -1,0 +1,27 @@
+<div class="m-5 d-flex justify-content-center">
+  <div class="card mb-3 w-50">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img
+          src="{{ product?.imageURL }}"
+          class="img-fluid rounded-start"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <div class="d-flex justify-content-around">
+            <h5 class="card-title">{{ product?.name }}</h5>
+            <h5 class="w-50 text-center">
+              {{ product?.price | currency }}
+            </h5>
+          </div>
+          <p class="card-text">{{ product?.description }}</p>
+          <p class="card-text">
+            <strong class="text-muted">Quantity {{ product?.quantity }}</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

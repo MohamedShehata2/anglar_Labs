@@ -1,0 +1,14 @@
+<h2 class="text-center my-4 text-light display-3">Products List</h2>
+<div class="container d-flex justify-content-center w-100 p-5">
+  <!-- <div class="d-flex flex-wrap justify-content-evenly w-100"> -->
+  <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2">
+    <app-product-item
+      *ngFor="let item of ProductsList; let i = index"
+      [myProduct]="item"
+      class="text-light"
+    >
+      {{ item.name }}
+    </app-product-item>
+  </div>
+</div>
+<p></p>

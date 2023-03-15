@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Phone x",
+      "price": 400,
+      "description": "",
+      "quantity": 8,
+      "imageURL": "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+    },
+    {
+      "id": 3,
+      "name": "OPPOF19",
+      "price": 500,
+      "description": "",
+      "quantity": 33,
+      "imageURL": "https://i.dummyjson.com/data/products/4/1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Huawei P30",
+      "price": 100,
+      "description": "",
+      "quantity": 76,
+      "imageURL": "https://i.dummyjson.com/data/products/5/thumbnail.jpg"
+    }
+  ]
+}

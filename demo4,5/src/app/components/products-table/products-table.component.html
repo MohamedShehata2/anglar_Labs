@@ -1,0 +1,43 @@
+<div class="container my-4">
+  <button class="btn btn-light mb-2" [routerLink]="['/products/edit/0']">
+    Add product
+  </button>
+  <table class="table text-light">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of allProducts">
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.name }}</td>
+        <td>{{ item.price | currency }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>
+          <div class="d-flex gap-3">
+            <button
+              class="btn btn-success btn-sm"
+              routerLink="/products/{{ item.id }}"
+            >
+              show
+            </button>
+            <button
+              class="btn btn-primary btn-sm"
+              routerLink="/products/edit/{{ item.id }}"
+            >
+              edit
+            </button>
+            <button class="btn btn-danger btn-sm" (click)="remove(item.id)">
+              delete
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
